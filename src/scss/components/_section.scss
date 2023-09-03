@@ -1,0 +1,28 @@
+.section {
+  position: relative;
+
+  width: 2.5rem;
+  height: 12.5rem;
+
+  border: $border-primary;
+
+  &:not(:last-child) {
+    margin-right: 10rem;
+  }
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    border-radius: 100% 100% 70% 70%;
+
+    width: 4rem;
+    height: 4.5rem;
+
+    border: $border-primary;
+    background-color: #8f2b2b;
+    left: -0.75rem;
+    top: -3rem;
+  }
+
+
+}
