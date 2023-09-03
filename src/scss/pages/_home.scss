@@ -10,8 +10,9 @@
 
   pointer-events: none;
 
-  &:hover {
-    background-image: linear-gradient(to top, $color-primary, $color-background);
-  }
+  transition: all 0.5s linear;
 
+  &:hover {
+    background: linear-gradient(to top, $color-primary, $color-background);
+  }
 }
