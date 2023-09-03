@@ -11,6 +11,8 @@
   cursor: pointer;
   pointer-events: auto;
 
+  transition: all 0.5s linear;
+
   &:not(:last-child) {
     margin-right: 10rem;
   }
@@ -27,13 +29,15 @@
     background-color: #8f2b2b;
     left: -0.75rem;
     top: -3rem;
+
+    transition: all 0.2s linear;
   }
 
   &:hover {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.451), grey);
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.451), grey);
 
     &:before, &:after {
-      background-image: linear-gradient(to bottom, rgba(255, 174, 0, 0.725), grey);
+      background: linear-gradient(to bottom, rgba(255, 174, 0, 0.725), grey);
     }
   }
 

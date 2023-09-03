@@ -1,0 +1,22 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.u-position-left {
+  left: 0.5rem;
+}
+
+.u-title-letter-spacing {
+  letter-spacing: 0.8rem;
+}
+
+.u-animation-to-top {
+  animation: moveInTop 0.5s ease-out 0.25s;
+  animation-fill-mode: backwards;
+}
