@@ -4,6 +4,10 @@
   border: none;
   background-image: linear-gradient(to right bottom,#DCABC1,#987093);
 
+  &::backdrop {
+    background-image: linear-gradient(to right bottom,#DCABC1,#987093);
+    backdrop-filter: blur(10px);
+  }
   // &[aria-hidden="false"] {
   //   opacity: 1;
   //   pointer-events: all;
