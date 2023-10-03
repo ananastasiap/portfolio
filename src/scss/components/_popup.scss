@@ -1,24 +1,18 @@
 .popup {
+  position: absolute;
+  top: 1rem;
+  left: 1.2rem;
   width: 100vw;
   height: 100vh;
+
+  padding: 4rem;
   border: none;
-  background-image: linear-gradient(to right bottom,#DCABC1,#987093);
+  background-color: #FFF480;
+  // background-image: linear-gradient(to right bottom, #FFF480, #DCABC1);
 
   &::backdrop {
-    background-image: linear-gradient(to right bottom,#DCABC1,#987093);
+    background-color: #FFF480;
+    // background-image: linear-gradient(to right bottom, #FFF480, #DCABC1);
     backdrop-filter: blur(10px);
   }
-  // &[aria-hidden="false"] {
-  //   opacity: 1;
-  //   pointer-events: all;
-  // }
-
-  // .about-modal {
-  //   width: 100vh;
-  //   background: black;
-
-  //   .close {
-  //     font-size: 20rem;
-  //   }
-  // }
 }

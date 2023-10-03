@@ -1,0 +1,46 @@
+address {
+  width: 93rem;
+  height: auto;
+  margin-left: auto;
+
+  .list__contacts {
+    display: grid;
+    grid-template-columns: 1.6fr 0.9fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem 0.5rem;
+    grid-template-areas:
+      ". ."
+      ". .";
+    grid-auto-columns: auto;
+
+    &--item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 4rem;
+
+      font-size: 2rem;
+      border: solid 0.1rem black;
+      border-radius: 2rem;
+
+      transition: all 0.1s ease-out;
+
+      &:hover {
+        background-color: black;
+        color: white;
+        transform: scale(1.05);
+
+        a {
+          color: white;
+        }
+      }
+
+      a {
+        font-size: 3rem;
+        color: black;
+        transition: all 0.1s ease-in-out;
+      }
+    }
+  }
+}
