@@ -1,5 +1,5 @@
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Onest', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: $color-primary;
@@ -16,4 +16,8 @@ body {
   letter-spacing: 1rem;
 
   transition: all 0.5s ease;
+
+  &__popup {
+    font-size: 10rem;
+  }
 }
