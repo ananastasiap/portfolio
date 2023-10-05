@@ -19,5 +19,9 @@ body {
 
   &__popup {
     font-size: 10rem;
+
+    &--skills {
+      color: $color-secondary;
+    }
   }
 }

@@ -1,5 +1,5 @@
 .main {
-  background-color: $color-background;
+  background-color: $color-secondary;
 
   height: 100vh;
   width: 100vw;
@@ -13,6 +13,6 @@
   transition: all 0.5s linear;
 
   &:hover {
-    background: linear-gradient(to top, $color-primary, $color-background);
+    background: linear-gradient(to top, $color-primary, $color-secondary);
   }
 }
