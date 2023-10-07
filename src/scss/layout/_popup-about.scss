@@ -1,0 +1,7 @@
+.about-modal__container {
+  background-color: $color-about;
+
+  &::backdrop {
+    background-color: $color-about;
+  }
+}
