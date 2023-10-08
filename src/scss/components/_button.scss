@@ -25,4 +25,13 @@
       ;
     }
   }
+
+  &__about {
+    margin-top: 3rem;
+    background-color: $color-about;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
 }
