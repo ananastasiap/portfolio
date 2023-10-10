@@ -7,15 +7,19 @@
 
   .list__projects {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-end;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    padding: 0;
+
+
 
     &--item {
+      border: $border-primary;
+      border-radius: $border-radius-primary;
+      padding: 4rem;
 
-      .item-prewiew {
-        width: 40%;
+      .item-link {
+        font-size: 2rem;
       }
     }
   }
