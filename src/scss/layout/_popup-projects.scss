@@ -1,0 +1,22 @@
+.projects-modal__container {
+  background-color: $color-projects;
+
+  &::backdrop {
+    background-color: $color-projects;
+  }
+
+  .list__projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+
+    &--item {
+
+      .item-prewiew {
+        width: 40%;
+      }
+    }
+  }
+}

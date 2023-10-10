@@ -20,7 +20,8 @@ body {
   &__popup {
     font-size: 10rem;
 
-    &--skills {
+    &--skills,
+    &--projects {
       color: $color-secondary;
     }
   }
