@@ -10,6 +10,7 @@
     align-items: flex-end;
     justify-content: flex-end;
     flex-wrap: wrap;
+    gap: 1rem;
 
 
 
@@ -17,9 +18,22 @@
       border: $border-primary;
       border-radius: $border-radius-primary;
       padding: 4rem;
+      width: 35rem;
+      height: 16rem;
+      text-align: center;
+
+      &:hover {
+        background-color: $color-secondary;
+
+        a {
+          color: $color-primary;
+        }
+      }
 
       .item-link {
         font-size: 2rem;
+        color: $color-secondary;
+
       }
     }
   }
