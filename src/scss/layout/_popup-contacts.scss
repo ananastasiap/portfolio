@@ -1,45 +1,50 @@
-address {
-  width: 93rem;
-  height: auto;
-  margin-left: auto;
+.contacts-modal__container {
+  background-color: $color-contacts;
 
-  .list__contacts {
-    display: grid;
-    grid-template-columns: 1.6fr 0.9fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0.5rem 0.5rem;
-    grid-template-areas:
-      ". ."
-      ". .";
-    grid-auto-columns: auto;
+  &::backdrop {
+    background-color: $color-contacts;
+  }
 
-    &--item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 4rem;
+  address {
+    width: 93rem;
+    height: auto;
+    margin-left: auto;
 
-      font-size: 2rem;
-      border: solid 0.1rem black;
-      border-radius: 2rem;
+    .list__contacts {
+      display: grid;
+      grid-template-columns: 1.6fr 0.9fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0.5rem 0.5rem;
+      grid-auto-columns: auto;
 
-      transition: all 0.1s ease-out;
+      &--item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 4rem;
 
-      &:hover {
-        background-color: black;
-        color: white;
-        transform: scale(1.05);
+        font-size: 2rem;
+        border: $border-primary;
+        border-radius: 2rem;
+
+        transition: all 0.1s ease-out;
+
+        &:hover {
+          background-color: $color-primary;
+          color: $color-secondary;
+          transform: scale(1.05);
+
+          a {
+            color: $color-secondary;
+          }
+        }
 
         a {
-          color: white;
+          font-size: 3rem;
+          color: $color-primary;
+          transition: all 0.1s ease-in-out;
         }
-      }
-
-      a {
-        font-size: 3rem;
-        color: black;
-        transition: all 0.1s ease-in-out;
       }
     }
   }

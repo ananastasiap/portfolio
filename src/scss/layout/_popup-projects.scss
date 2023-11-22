@@ -1,0 +1,53 @@
+.projects-modal__container {
+  background-color: $color-projects;
+
+  &::backdrop {
+    background-color: $color-projects;
+  }
+
+  .list__projects {
+    width: 90rem;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin-left: auto;
+
+    &--item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      border: $border-primary;
+      border-radius: $border-radius-primary;
+      padding: 4rem;
+      width: 35rem;
+      height: 16rem;
+      text-align: center;
+
+      &:hover {
+        background-color: $color-secondary;
+
+        h3,
+        a {
+          color: $color-primary;
+        }
+      }
+
+      .item-link {
+        font-size: 1.5rem;
+        color: $color-secondary;
+        transition: $transition-primary;
+
+        &:hover {
+          font-size: 1.7rem;
+          color: $color-projects;
+        }
+      }
+    }
+  }
+}

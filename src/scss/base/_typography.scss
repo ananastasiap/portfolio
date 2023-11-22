@@ -1,12 +1,11 @@
 body {
-  font-family: 'Onest', sans-serif;
+  font-family: "Onest", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: $color-primary;
 }
 
 .title {
-
   position: absolute;
   top: 8rem;
   left: 2rem;
@@ -15,9 +14,25 @@ body {
   font-weight: 600;
   letter-spacing: 1rem;
 
-  transition: all 0.5s ease;
+  transition: $transition-primary;
+
+  &__main {
+    top: 14rem;
+    left: 42rem;
+    font-size: 5.5rem;
+  }
 
   &__popup {
     font-size: 10rem;
+
+    &--skills,
+    &--projects {
+      color: $color-secondary;
+    }
+  }
+
+  &__item {
+    font-size: 1.7rem;
+    color: $color-secondary;
   }
 }

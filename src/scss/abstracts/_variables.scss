@@ -1,10 +1,21 @@
 // --- COLORS ---
-$color-primary: #0B0A07;
+$color-primary: #0b0a07;
+$color-primary-lighter: #272621;
+$color-secondary: #f9fbf2;
 
-$color-background: #F9FBF2;
+$color-about: #ffeedb;
+$color-about-secondary: #ffeedbc6;
+$color-projects: #98473e;
+$color-skills: #00916e;
+$color-skills-secondary: #0db68f;
+$color-contacts: #fff480;
 
 // FONT-SIZES
 $default-font-size: 1.6rem;
 
 // BORDERS
 $border-primary: 0.1rem solid $color-primary;
+$border-radius-primary: 2rem;
+
+// TRANSITION
+$transition-primary: all 0.5s ease;

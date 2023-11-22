@@ -1,0 +1,58 @@
+.skills-modal__container {
+  background-color: $color-skills;
+
+  // for firefox
+  scrollbar-width: thin;
+  scrollbar-color: $color-skills $color-secondary;
+
+  &::backdrop {
+    background-color: $color-skills;
+  }
+
+  &::-webkit-scrollbar {
+    width: 1.5rem;
+
+    &-track {
+      background-color: $color-secondary;
+      border-radius: $border-radius-primary;
+    }
+
+    &-thumb {
+      background-color: $color-skills-secondary;
+      border-radius: $border-radius-primary;
+    }
+  }
+
+  .list__skills {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem 0.5rem;
+
+    width: 50rem;
+    margin-left: auto;
+
+    &--item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+
+      font-size: 2rem;
+      color: $color-secondary;
+      border: $border-primary;
+      border-color: $color-secondary;
+      border-radius: 2rem;
+
+      transition: all 0.1s ease-out;
+
+      &:hover {
+        background-color: $color-secondary;
+        color: $color-primary;
+        transform: scale(1.05);
+      }
+    }
+  }
+}

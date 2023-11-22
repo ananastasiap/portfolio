@@ -1,0 +1,16 @@
+.cv {
+  display:inline-block;
+  padding: 4rem;
+
+  color: $color-primary;
+  border: $border-primary;
+  border-radius: $border-radius-primary;
+  outline: none;
+
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    background-color: $color-secondary;
+    transform: scale(1.5);
+  }
+}
