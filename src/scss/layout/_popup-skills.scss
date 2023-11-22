@@ -1,8 +1,26 @@
 .skills-modal__container {
   background-color: $color-skills;
 
+  // for firefox
+  scrollbar-width: thin;
+  scrollbar-color: $color-skills $color-secondary;
+
   &::backdrop {
     background-color: $color-skills;
+  }
+
+  &::-webkit-scrollbar {
+    width: 1.5rem;
+
+    &-track {
+      background-color: $color-secondary;
+      border-radius: $border-radius-primary;
+    }
+
+    &-thumb {
+      background-color: $color-skills-secondary;
+      border-radius: $border-radius-primary;
+    }
   }
 
   .list__skills {
