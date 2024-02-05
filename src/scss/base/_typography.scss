@@ -36,3 +36,15 @@ body {
     color: $color-secondary;
   }
 }
+
+/* MEDIA */
+
+@media screen and (max-width: 480px) {
+  .title {
+    &__main {
+      top: 4rem;
+      left: 2rem;
+      font-size: 2rem;
+    }
+  }
+}
